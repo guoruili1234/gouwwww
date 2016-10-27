@@ -1,0 +1,14 @@
+;(function($){
+	$("#btn1").on("tap",function(){
+		$(".mark1").animate({"top":0})
+	})
+	$("#qu").on("tap",function(){
+		$(".mark1").animate({"top":100+"%"});
+	})
+	$("#btn2").on("tap",function(){
+		$(".mark2").animate({"top":0})
+	})
+	$("#qu1").on("tap",function(){
+		$(".mark2").animate({"top":100+"%"});
+	})
+})(Zepto)

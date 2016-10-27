@@ -1,0 +1,122 @@
+@import url(reset.css);
+a {
+  text-decoration: none;
+  color: #3e3e3e; }
+
+html, body, .wrap {
+  width: 100%;
+  height: 100%; }
+
+.wrap {
+  position: relative;
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  overflow: hidden;
+  background: #f4f4f4; }
+
+.header {
+  width: 100%;
+  height: .88rem;
+  border-bottom: .01rem solid #ababab;
+  line-height: .88rem;
+  position: relative; }
+  .header a {
+    position: absolute;
+    left: .2rem;
+    top: -.2rem;
+    width: .16rem;
+    height: .28rem; }
+    .header a img {
+      width: 100%;
+      height: 100%; }
+  .header h1 {
+    width: 100%;
+    text-align: center;
+    font-size: .3rem; }
+
+.main {
+  width: 100%;
+  -webkit-flex: 1;
+  font-size: .3rem;
+  position: relative; }
+  .main h3 {
+    width: 100%;
+    text-align: center;
+    padding: .37rem 0; }
+    .main h3 img {
+      width: 1.44rem;
+      height: 1.44rem; }
+  .main p {
+    width: 100%;
+    line-height: .45rem;
+    text-align: center; }
+  .main ul {
+    margin-top: .8rem;
+    border-top: .01rem solid #c8c7cc;
+    background: #fff; }
+    .main ul li {
+      line-height: 1rem;
+      border-bottom: .01rem solid #c8c7cc;
+      padding-left: .9rem;
+      position: relative; }
+      .main ul li span {
+        position: absolute;
+        right: .15rem;
+        top: 0;
+        font-size: .25rem; }
+        .main ul li span img {
+          width: .08rem;
+          height: .16rem;
+          margin-left: .15rem; }
+      .main ul li:nth-of-type(1) {
+        background: url(../img/about_icon_weibo.png) no-repeat 0.35rem center;
+        background-size: .4rem .4rem; }
+      .main ul li:nth-of-type(2) {
+        background: url(../img/about_icon_weixin.png) no-repeat 0.35rem center;
+        background-size: .4rem .4rem; }
+      .main ul li:nth-of-type(3) {
+        background: url(../img/about_icon_tel.png) no-repeat 0.35rem center;
+        background-size: .4rem .4rem; }
+
+.footer {
+  width: 100%;
+  text-align: center;
+  font-size: .23rem;
+  line-height: .5rem; }
+
+.mark {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1; }
+  .mark .tan {
+    width: 5.5rem;
+    height: 2rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background: #f3f3f3;
+    margin: -1rem 0 0 -2.7rem;
+    border-radius: .2rem; }
+    .mark .tan h2 {
+      font-size: .3rem;
+      font-weight: bold;
+      text-align: center;
+      line-height: 1.18rem;
+      border-bottom: .01rem solid #c2c2ca; }
+    .mark .tan p {
+      width: 100%;
+      font-size: .3rem;
+      color: #007aff; }
+      .mark .tan p span {
+        width: 50%;
+        display: inline-block;
+        line-height: .8rem;
+        text-align: center; }
+        .mark .tan p span:nth-of-type(1) {
+          border-right: .01rem solid #c2c2ca; }
+
+/*# sourceMappingURL=about.css.map */

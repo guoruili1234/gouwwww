@@ -1,0 +1,112 @@
+@import url(reset.css);
+a {
+  text-decoration: none;
+  color: #3e3e3e; }
+
+html, body, .wrap {
+  width: 100%;
+  height: 100%; }
+
+.wrap {
+  box-sizing: border-box;
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  overflow: hidden;
+  background: #f2f2f2; }
+
+.header {
+  width: 100%;
+  height: .88rem;
+  line-height: .88rem;
+  border-bottom: .01rem solid #a9a9a9;
+  position: relative; }
+  .header h1 {
+    text-align: center;
+    font-size: .3rem; }
+    .header h1 span {
+      width: 1.1rem;
+      height: .58rem;
+      display: inline-block;
+      color: #bb2212;
+      line-height: .58rem;
+      border: .01rem solid #bb2212; }
+      .header h1 span:nth-of-type(1) {
+        border-radius: .1rem 0 0 .1rem; }
+      .header h1 span:nth-of-type(2) {
+        border-radius: 0 .1rem .1rem 0; }
+    .header h1 .bg {
+      color: #fff;
+      background: #bb2212; }
+  .header p {
+    position: absolute;
+    right: .4rem;
+    top: 0;
+    font-size: .36rem;
+    color: #bb2212; }
+
+.main {
+  width: 100%;
+  -webkit-flex: 1;
+  margin-top: .15rem;
+  display: -webkit-flex;
+  -webkit-flex-direction: row;
+  -webkit-flex-shrink: 0; }
+  .main .ma {
+    width: 100%;
+    -webkit-flex-shrink: 0; }
+    .main .ma dl {
+      display: -webkit-flex;
+      -webkit-flex-direction: row;
+      padding: .46rem .3rem;
+      border-bottom: .01rem solid #c8c7cc;
+      line-height: .4rem;
+      position: relative;
+      background: #fff; }
+      .main .ma dl dt {
+        width: 1.2rem;
+        height: 1.2rem;
+        margin-right: .3rem; }
+        .main .ma dl dt img {
+          width: 100%;
+          height: 100%; }
+      .main .ma dl dd {
+        -webkit-flex: 1;
+        font-size: .2rem; }
+        .main .ma dl dd h4 {
+          color: #bb2212; }
+      .main .ma dl button {
+        position: absolute;
+        right: .17rem;
+        top: .72rem;
+        border: .01rem solid #bb2212;
+        background: #fff;
+        color: #bb2212;
+        width: 1rem;
+        height: .6rem; }
+  .main .ma2 {
+    width: 100%;
+    -webkit-flex-shrink: 0;
+    position: relative; }
+    .main .ma2 p {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin: -1.13rem 0 0 -1.18rem; }
+
+.footer {
+  width: 100%;
+  height: .99rem;
+  display: -webkit-flex;
+  -webkit-flex-direction: row;
+  border-top: .01rem solid #a9a9a9; }
+  .footer a {
+    -webkit-flex: 1;
+    text-align: center;
+    font-size: .2rem;
+    padding-top: .15rem; }
+    .footer a img {
+      width: .35rem;
+      height: .35rem;
+      margin-bottom: .02rem; }
+
+/*# sourceMappingURL=in.css.map */

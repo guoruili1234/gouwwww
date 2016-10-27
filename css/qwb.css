@@ -1,0 +1,418 @@
+@charset "UTF-8";
+html, body, div, p, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup,
+menu, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+  list-style: none;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box; }
+
+article, aside, details, dialog, figcaption, figure, footer, header, hgroup, menu, legend, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+a, a:active, a:hover {
+  outline: none; }
+
+blockquote, p {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+input, select {
+  vertical-align: middle; }
+
+img, button {
+  outline: none; }
+
+/* 记住定义重点风格! */
+:focus {
+  outline: 0; }
+
+/* 记住因何故插入 */
+ins {
+  text-decoration: none; }
+
+del {
+  text-decoration: line-through; }
+
+/* 表还需要“单元格间距= " 0 "”的标记 */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+ul {
+  list-style: none; }
+
+html, body, .wrap {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: "微软雅黑"; }
+
+img {
+  width: 100%;
+  height: 100%; }
+
+.wrap {
+  display: -webkit-flex;
+  -webkit-flex-direction: column; }
+
+a {
+  text-decoration: none; }
+
+#pullDown, #pullUp {
+  background: #fff;
+  height: .88rem;
+  line-height: .88rem;
+  border-bottom: 1px solid #ccc;
+  font-weight: bold;
+  font-size: 14px;
+  color: #888; }
+
+#pullDown .pullDownIcon, #pullUp .pullUpIcon {
+  display: block;
+  float: left;
+  width: .88rem;
+  height: .88rem;
+  background: url("../images/pull-icon@2x.png") 0 0 no-repeat;
+  -webkit-background-size: 40px 80px;
+  background-size: 40px 80px;
+  -webkit-transition-property: -webkit-transform;
+  -webkit-transition-duration: 250ms; }
+
+#pullDown .pullDownIcon {
+  -webkit-transform: rotate(0deg) translateZ(0); }
+
+#pullUp .pullUpIcon {
+  -webkit-transform: rotate(-180deg) translateZ(0); }
+
+#pullDown.flip .pullDownIcon {
+  -webkit-transform: rotate(-180deg) translateZ(0); }
+
+#pullUp.flip .pullUpIcon {
+  -webkit-transform: rotate(0deg) translateZ(0); }
+
+#pullDown.loading .pullDownIcon, #pullUp.loading .pullUpIcon {
+  background-position: 0 100%;
+  -webkit-transform: rotate(0deg) translateZ(0);
+  -webkit-transition-duration: 0ms;
+  -webkit-animation-name: loading;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear; }
+
+@-webkit-keyframes loading {
+  from {
+    -webkit-transform: rotate(0deg) translateZ(0); }
+  to {
+    -webkit-transform: rotate(360deg) translateZ(0); } }
+header {
+  width: 100%;
+  height: 1.76rem;
+  border-bottom: .01rem solid #e6e6e6; }
+  header .top {
+    width: 100%;
+    height: .88rem;
+    line-height: .88rem;
+    font-size: .32rem;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: .01rem solid #b2b2b2;
+    background: #e0e0e0; }
+  header .tab {
+    width: 100%;
+    height: .88rem;
+    line-height: .88rem; }
+    header .tab ul {
+      width: 100%;
+      height: 100%;
+      display: -webkit-flex; }
+      header .tab ul li {
+        -webkit-flex: 1;
+        text-align: center;
+        font-size: .3rem;
+        color: #262626;
+        position: relative; }
+        header .tab ul li::after {
+          content: "";
+          background: url("../images/filter_icon_normal.png");
+          background-size: 100% 100%;
+          width: .1rem;
+          height: .06rem;
+          position: absolute;
+          left: 70%;
+          top: 50%;
+          margin-top: -.03rem; }
+
+.on {
+  color: red; }
+
+.zhezhao {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  top: 1.76rem;
+  left: 0;
+  overflow: hidden; }
+  .zhezhao .tab1 {
+    width: 100%;
+    height: 7.04rem;
+    overflow: hidden;
+    display: -webkit-flex; }
+    .zhezhao .tab1 .left {
+      -webkit-flex: 1;
+      width: 100%;
+      height: 100%; }
+      .zhezhao .tab1 .left ul {
+        width: 100%;
+        height: 100%; }
+        .zhezhao .tab1 .left ul li {
+          width: 100%;
+          height: .88rem;
+          background: #fff;
+          border-bottom: .01rem solid #b2b2b2;
+          border-right: .01rem solid #b2b2b2;
+          padding-left: .5rem;
+          font-size: .3rem;
+          line-height: .88rem; }
+        .zhezhao .tab1 .left ul .bg {
+          border-right: 0;
+          background: #e0e0e0;
+          color: #7b0000; }
+    .zhezhao .tab1 .right {
+      -webkit-flex: 1;
+      width: 100%;
+      height: 100%;
+      background: #e0e0e0; }
+      .zhezhao .tab1 .right ul {
+        width: 100%;
+        height: 100%; }
+        .zhezhao .tab1 .right ul li {
+          width: 100%;
+          height: .88rem;
+          background: #e0e0e0;
+          border-bottom: .01rem solid #b2b2b2;
+          padding-left: .5rem;
+          font-size: .3rem;
+          line-height: .88rem; }
+  .zhezhao .tab2 {
+    width: 100%;
+    height: 7.04rem;
+    overflow: hidden;
+    display: none; }
+    .zhezhao .tab2 ul {
+      width: 100%;
+      height: 100%; }
+      .zhezhao .tab2 ul li {
+        width: 100%;
+        height: .88rem;
+        background: #fff;
+        border-bottom: .01rem solid #e6e6e6; }
+        .zhezhao .tab2 ul li dl {
+          width: 100%;
+          height: 100%;
+          display: -webkit-flex; }
+          .zhezhao .tab2 ul li dl dt {
+            width: 15%;
+            height: 100%;
+            padding-left: .2rem; }
+            .zhezhao .tab2 ul li dl dt img {
+              width: .88rem;
+              height: .88rem;
+              display: block; }
+          .zhezhao .tab2 ul li dl dd {
+            -webkit-flex: 1;
+            padding-left: .2rem;
+            font-size: .3rem;
+            line-height: .88rem; }
+  .zhezhao .tab3 {
+    display: none;
+    width: 100%;
+    height: 7.04rem;
+    overflow: hidden; }
+    .zhezhao .tab3 ul {
+      width: 100%;
+      height: 100%; }
+      .zhezhao .tab3 ul li {
+        width: 100%;
+        height: .88rem;
+        background: #fff;
+        border-bottom: .01rem solid #e6e6e6;
+        padding-left: .5rem;
+        font-size: .3rem;
+        line-height: .88rem; }
+  .zhezhao .tab4 {
+    display: none;
+    width: 100%;
+    overflow: hidden; }
+    .zhezhao .tab4 ul {
+      width: 100%;
+      height: 100%; }
+      .zhezhao .tab4 ul li {
+        width: 100%;
+        height: .88rem;
+        background: #fff;
+        border-bottom: .01rem solid #e6e6e6;
+        padding-left: .5rem;
+        font-size: .3rem;
+        line-height: .88rem;
+        position: relative; }
+        .zhezhao .tab4 ul li .radio {
+          display: block;
+          width: .6rem;
+          height: .6rem;
+          position: absolute;
+          right: .7rem;
+          top: 50%;
+          margin-top: -.3rem;
+          float: right;
+          border-radius: 50%;
+          border: .01rem solid #ccc; }
+    .zhezhao .tab4 .li_last {
+      width: 100%;
+      height: 1rem;
+      background: #fff;
+      position: relative; }
+      .zhezhao .tab4 .li_last #btn {
+        width: 1.5rem;
+        height: .6rem;
+        position: absolute;
+        right: .3rem;
+        top: 50%;
+        font-size: .28rem;
+        margin-top: -.3rem;
+        background: #7b0000;
+        border: 0;
+        color: #fff;
+        border-radius: .05rem; }
+
+section {
+  width: 100%;
+  height: 100%;
+  -webkit-flex: 1;
+  overflow-y: auto; }
+  section .img {
+    width: 100%;
+    height: 4.5rem; }
+  section .main1 {
+    width: 100%;
+    height: 100%;
+    display: -webkit-flex;
+    -webkit-flex-wrap: wrap; }
+    section .main1 dl {
+      width: 50%;
+      height: 100%;
+      padding: .5rem;
+      border-top: 1px solid #e0e0e0; }
+      section .main1 dl:nth-of-type(odd) {
+        border-bottom: 1px solid #e0e0e0; }
+      section .main1 dl:nth-of-type(even) {
+        border-bottom: 1px solid #e0e0e0;
+        border-left: 1px solid #e0e0e0; }
+      section .main1 dl .p1 {
+        width: 100%;
+        height: .4rem;
+        line-height: .4rem;
+        color: #262626;
+        font-size: .21rem;
+        text-align: center; }
+      section .main1 dl .p2 {
+        width: 100%;
+        height: .4rem;
+        line-height: .4rem;
+        color: #575757;
+        font-size: .24rem;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        text-align: center; }
+      section .main1 dl .p3 {
+        width: 100%;
+        height: .4rem;
+        line-height: .4rem; }
+        section .main1 dl .p3 > span {
+          font-size: .3rem;
+          color: #bb2212;
+          font-weight: bold;
+          display: block;
+          float: left;
+          width: 50%;
+          text-align: center; }
+        section .main1 dl .p3 .del {
+          font-size: .28rem;
+          display: block;
+          float: left;
+          color: #575757; }
+
+#thelist {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+footer {
+  width: 100%;
+  height: .99rem;
+  background: #f1f0ef;
+  border-top: 1px solid #b2b2b2; }
+  footer ul {
+    width: 100%;
+    height: 100%;
+    display: -webkit-flex; }
+    footer ul li {
+      width: 100%;
+      height: 100%;
+      -webkit-flex: 1; }
+      footer ul li a {
+        display: block;
+        width: 100%;
+        height: 100%; }
+        footer ul li a dl {
+          width: 100%;
+          height: 100%;
+          display: -webkit-flex;
+          -webkit-flex-direction: column; }
+          footer ul li a dl dt {
+            width: 100%;
+            height: 100%;
+            -webkit-flex: 1;
+            position: relative;
+            margin-top: .15rem; }
+            footer ul li a dl dt img {
+              width: .4rem;
+              height: .4rem;
+              display: block;
+              position: absolute;
+              left: 0;
+              right: 0;
+              top: 0;
+              bottom: 0;
+              margin: auto; }
+          footer ul li a dl dd {
+            -webkit-flex: 1;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            font-size: .18rem;
+            line-height: .3rem;
+            color: #9e9e9e; }
+          footer ul li a dl .dd {
+            color: #bb2212; }
+
+/*# sourceMappingURL=qwb.css.map */

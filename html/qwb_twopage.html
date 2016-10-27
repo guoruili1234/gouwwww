@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+	<!-- 禁止ios设备将数字作为拨号连接，邮箱自动发送，点击地图跳转 -->
+	<meta nume="format-detection" content="telephone=no,email=no,adress=no">
+	<!-- 强制显示全屏 -->
+	<meta name="full-screen" content="yes">
+	<!-- 开启对webapp的支持 -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<!-- web app 应用下状态条的颜色，默认值为白色 -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<!-- 禁止浏览器从缓存中访问页面 -->
+	<meta http-equiv="pragma" content="no-cache">
+	<link rel="stylesheet" href="../css/qwb_twopage.css">
+	<title>详情页</title>
+</head>
+<body>
+	<div class="box">
+		<header>
+			<a href="#" class="a1" id="back"></a>
+			<a href="#" class="a2"></a>
+			良品汇
+		</header>
+		<section id="section">
+			<div class="home">
+				<h4>良品汇—开启你的高品质生活</h4>
+				<p>2016-04-04&nbsp;&nbsp;值得信赖的&nbsp;&nbsp;良品汇app</p>
+				<img src="../images/goods_list_banner_default.png" alt="">
+				<p class="pp">
+					[良品汇]定位高端闲置物品交易平台，提供一站式售卖服务，覆盖包袋、配饰、首饰、腕表、衣服、鞋靴等品类，通过平台深度介入交易，保证商品品质及交易安全，平台上线至今已帮助用户成功售近10000件时尚单品，被誉为剁手党终极解救神器。
+				</p>
+				<p class="btn">我们的优势</p>
+				<dl>
+					<dd>
+						<h6>1.专业鉴定 正品保障</h6>
+						您在[良品汇]上购买的任意一件闲置商品，都将经过[良品汇]品牌鉴定专家的鉴定，仿品次品一律取消交易，鉴定通过才会发货，充分保障卖家权益
+					</dd>
+					<dt>
+						<img src="../images/1.png" alt="">
+					</dt>
+				</dl>
+				<dl>
+					<dt>
+						<img src="../images/2.png" alt="">
+					</dt>
+					<dd>
+						<h6>2.担保交易  安全支付</h6>
+						您在[良品汇]上购买的任意一件闲置商品，都将经过[良品汇]品牌鉴定专家的鉴定，仿品次品一律取消交易，鉴定通过才会发货，充分保障卖家权益
+					</dd>
+				</dl>
+				<dl>
+					<dd>
+						<h6>3.深度介入  服务升级</h6>
+						针对卖家提供一站式寄卖服务，即标注“官方寄卖”的宝贝，卖家均已提前发货至[良品汇]，已经通过品牌鉴定，并由平台实拍照片，评估成色，拍下后闪速发货
+					</dd>
+					<dt>
+						<img src="../images/3.png" alt="">
+					</dt>
+				</dl>
+				<div class="on">
+					<h6>4.最合理的交易流程</h6>
+					<p>
+						[良品汇]秉承不囤货、不加价的原则，仅从保障买卖双方权益的角度设计交易流程
+					</p>
+					<img src="../images/goods_detail_desc_self.png" alt="">
+				</div>
+				<div class="on">
+					<h6>5.最贴心的用户体验</h6>
+					<p>
+						[良品汇]秉承不囤货、不加价的原则，仅从保障买卖双方权益的角度设计交易流程
+					</p>
+					<img src="../images/goods_detail_desc_self.png" alt="">
+				</div>	
+				<div class="dv">
+					联系我们
+				</div>
+				<div class="lianxi">
+					<p class="p1">400-974-799</p>
+					<p class="p2">周一至周六  9:30-799</p>
+				</div>
+				<div class="down">
+					<p>
+						<button>下载良品汇APP</button>
+					</p>
+				</div>
+					<a href="#">
+					下载良品汇APP，立即领取50元代金券
+					</a>
+			</div>
+		</section>
+		<footer></footer>
+	</div>
+</body>
+</html>
+<script src="../js/jquery-1.8.3.js"></script>
+<script src="../js/setfontsize.js"></script>
+<script src="../js/iscroll5.js"></script>
+<script>
+	var main1=new IScroll('#section');
+	setTimeout(function(){
+		main1.refresh();
+	})
+	$('#back').on('tap',function(){
+		window.history.back();
+	})
+</script>

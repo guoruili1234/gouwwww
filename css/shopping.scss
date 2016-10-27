@@ -1,0 +1,73 @@
+@charset "utf-8";
+@import url(reset.css);
+@mixin pos($pos:relative){
+	position:$pos;
+}
+@mixin box($v:row){
+	display:-webkit-flex;
+	-webkit-flex-direction:$v;
+}
+a{
+	text-decoration:none;
+	color:#3e3e3e;
+}
+html,body,.wrap{
+	width:100%;
+	height:100%;
+}
+.wrap{
+	box-sizing:border-box;
+	@include box(column);
+	overflow:hidden;
+}
+.header{
+	width:100%;
+	height:.88rem;
+	border-bottom:.01rem solid #a9a9a9;
+	h1{
+		text-align:center;
+		font-size:.3rem;
+		line-height:.88rem;		
+	}
+}
+.main{
+	width:100%;
+	-webkit-flex:1;
+	font-size:.28rem;
+	@include pos;
+	p{
+		width:100%;
+		@include pos(absolute);
+		left:50%;
+		top:45%;
+		margin-left:-.6rem;
+	}
+	button{
+		width:2rem;
+		height:.8rem;
+		background:#bb2212;
+		border:none;
+		color:#fff;
+		@include pos(absolute);
+		left:50%;
+		top:50%;
+		margin-left:-1rem;
+	}
+}
+.footer{
+	width:100%;
+	height:.99rem;	
+	@include box;
+	border-top:.01rem solid #a9a9a9;	
+	a{
+		-webkit-flex:1;
+		text-align:center;
+		font-size:.2rem;
+		padding-top:.15rem;		
+		img{
+			width:.35rem;
+			height:.35rem;
+			margin-bottom:.02rem;
+		}		
+	}		
+}

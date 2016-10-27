@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+	<!--  禁止ios设备将数字作为拨号连接，邮箱自动发送，点击地图跳转 -->
+	<meta name="format-detection" content="telephone=no,email=no，adress=no">
+	<!-- 强制全屏显示 -->
+	<meta name="full-screen" content="yes">
+	<!--  开启对webapp的支持 -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<!--  web app 应用下状态条（屏幕顶部条）的颜色,默认值为 default（白色） -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<!-- 禁止浏览器从的缓存中访问页面内容 -->
+	<meta http-equiv="Pragma" content="no-cache">
+	<link rel="stylesheet" type="text/css" href="../css/recharge.css">
+	<link rel="stylesheet" type="text/css" href="../css/font-awesome.css">
+	<script type="text/javascript" src="../js/iscroll-probe.js"></script>
+	<script type="text/javascript" src="../js/zepto.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<!-- 头部 -->
+		<header class="header">
+			<h1>充值</h1>
+			<span id="back">返回</span>
+		</header>
+		<!-- 中部 -->
+		<main class="main" id="main">
+			<div>
+				<label>金额&nbsp;&nbsp;￥</label>
+				<input type="number" placeholder="请输入金额" id="num">
+			</div>
+			<a href="#" id="next">下一步</a>
+			<p>注：<br/>余额单次最低充值金额1元;<br/>余额不可提现，仅可用于购买商品;</p>
+			
+		</main>
+		<div class="mark">
+				<div class="mark1">
+					<dl>
+						<dt>请选择充值方式</dt>
+						<dd>￥<span id="text">20</span></dd>
+					</dl>
+					<ul>
+						<li>
+							<span>支付宝支付</span>
+							<p>
+								<input type="radio"  name="rd" id="rd1">
+								<label for="rd1">单选</label>
+							</p>
+						</li>
+						<li>
+							<span>微信支付</span>
+							<p>
+								<input type="radio"  name="rd" id="rd2">
+								<label for="rd2">单选</label>
+							</p>
+						</li>
+					</ul>
+					<div class="btn">
+						<span id="remove">取消</span>
+						<span id="sure">确定</span>
+					</div>
+				</div>
+				<div class="mark2">
+					<h1>良品汇想要打开支付宝</h1>
+					<div class="btn">
+						<span id="remove1">取消</span>
+						<span id="sure1">确定</span>
+					</div>
+				</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="../js/js.js"></script>
+	
+	<script type="text/javascript" src="../js/setfontsize.js"></script>
+	
+</body>
+</html>

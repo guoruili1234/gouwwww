@@ -1,0 +1,15 @@
+;(function($){
+	$('#phone').on('tap',function(){
+		$('.mark').css({
+			'bottom':0
+		})
+		$('#qu,#open').on('tap',function(){
+			$('.mark').css({
+				'bottom':'-100%'
+			})
+		})
+	})
+	$('.back').on('click',function(){
+		window.history.go(-1);
+	})
+})(Zepto)

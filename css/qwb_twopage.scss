@@ -1,0 +1,226 @@
+@charset "utf-8";
+html, body, div,p, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup,
+menu, nav, section, summary, time, mark, audio, video{
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    text-decoration:none;
+    list-style:none;
+    -webkit-font-smoothing:antialiased;
+    box-sizing:border-box;
+}
+
+article, aside, details, dialog, figcaption, figure, footer, header, hgroup, menu, legend, nav, section { display: block; }
+nav ul{ list-style:none;}
+a,a:active,a:hover {outline: none;}
+blockquote, p{ quotes:none;}
+blockquote:before, blockquote:after, q:before, q:after{ content:''; content:none;}
+input, select{ vertical-align:middle;}
+img,button{
+    outline: none;
+}
+/* 记住定义重点风格! */
+:focus {
+    outline: 0;
+}
+
+/* 记住因何故插入 */
+ins {
+    text-decoration: none;
+}
+del {
+    text-decoration: line-through;
+}
+/* 表还需要“单元格间距= " 0 "”的标记 */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+ul{
+    list-style: none;
+} 
+html,body,.box{
+    width:100%;
+    height:100%;
+    overflow: hidden;
+    font-family: "微软雅黑";
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.box{
+    display: -webkit-flex;
+    -webkit-flex-direction:column;
+}
+a{
+    text-decoration: none;
+}
+header{
+	width: 100%;
+	height: .88rem;
+	background: #f8f8f8;
+	font-size: .32rem;
+	font-weight: bold;
+	text-align: center;
+	line-height: .88rem;
+	border-bottom: .01rem solid #b2b2b2;
+	position: relative;
+	.a1{
+		position: absolute;
+		width: .48rem;
+		height: .48rem;
+		background: url('../images/title_icon_back_black.png') no-repeat;
+		background-size: 100% 100%;
+		left: .1rem;
+		top: 50%;
+		margin-top: -.24rem;
+	}
+	.a2{
+		position: absolute;
+		width: .36rem;
+		height: .36rem;
+		background: url('../images/title_icon_share_black.png') no-repeat;
+		background-size: 100% 100%;
+		right: .15rem;
+		top: 50%;
+		margin-top: -.13rem;
+	}
+}
+section{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	.home{
+		width: 90%;
+		margin: 0 auto;
+	}
+	h4{
+		width: 100%;
+		font-size: .4rem;
+		line-height: .8rem;
+	}
+	p{
+		font-size: .28rem;
+		color: #8c8c8c;
+		line-height: .66rem;
+	}
+	.pp{
+		line-height: .45rem;
+		padding: 0 .3rem;
+	}
+	.btn{
+		width: 2rem;
+		height: .7rem;
+		text-align: center;
+		font-size: .3rem;
+		color: #3c3c3c;
+		margin: 1rem auto .3rem auto;
+		border: .02rem solid #050505;
+	}
+	dl{
+		width: 100%;
+		height: 100%;
+		display: -webkit-flex;
+		padding: .1rem;
+		dt{
+			width: 30%;
+			height: 100%;
+			padding: .05rem;
+		}
+		dd{
+			-webkit-flex:1;
+			line-height: .4rem;
+			color: #767676;
+			font-size: .26rem;
+			h6{
+				width: 100%;
+				line-height: .45rem;
+				color: #3f3f3f;
+				font-size: .28rem;
+			}
+		}
+	}
+	.on{
+		width: 100%;
+		height: 100%;
+		h6{
+			width: 100%;
+			line-height: .45rem;
+			color: #3f3f3f;
+			font-size: .28rem;
+		}
+		&>p{
+			line-height: .4rem;
+			color: #767676;
+			font-size: .26rem;
+		}
+	}
+	.dv{
+		width: 100%;
+		line-height: .45rem;
+		text-align: center;
+		font-size: .26rem;
+	}
+	.lianxi{
+		width: 80%;
+		height: 1.4rem;
+		margin: .3rem auto;
+		text-align: center;
+		background: #f7f7f7;
+		&>p{
+			line-height: .5rem;
+			color: #767676;
+			font-size: .26rem;
+			background: #f7f7f7;
+		}
+		.p1{
+			padding-top: .25rem;
+		}
+		.p2{
+			color: #b5b5b5;
+		}
+	}
+	.down{
+		width: 90%;
+		height: 2.3rem;
+		background: #f7f7f7;
+		margin: .6rem auto;
+		position: relative;
+		&>p{
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			margin-left: -2.35rem;
+			margin-top: -.45rem;
+			width: 4.7rem;
+			height: .9rem;
+			border-radius: .05rem;
+			overflow: hidden;
+			button{
+				width: 100%;
+				height: 100%;
+				border: 0;
+				background: #bb2212;
+				font-size: .32rem;
+				color: #fff;
+			}
+		}
+	}
+		a{
+			display: block;
+			width: 100%;
+			height: .4rem;
+			text-align: center;
+			line-height: .4rem;
+			color: #0052ff;
+			font-size: .28rem;
+		}
+}

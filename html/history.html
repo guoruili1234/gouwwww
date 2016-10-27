@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- 宽度为设备宽度，初始缩放比例为一，用户最大最小缩放比例为一，不允许用户手动缩放 -->
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+	<!-- 禁止设备将数字作为拨号连接，邮箱自动发送，点击地图跳转 -->
+	<meta name="format-detection" content="telephone=no,email=no,adress=no">
+	<!-- 强制全屏显示 -->
+	<meta name="full-screen" content="yes">
+	<!-- 开启对webapp的支持 -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<!-- web app 应用下状态条（屏幕顶部条）的颜色,默认值为 default（白色） -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<!-- 禁止浏览器从的缓存中访问页面内容 -->
+	<meta http-equiv="Pragma" content="no-cache">
+	<title>Document</title>
+	<link rel="stylesheet" href="../css/history.css">
+</head>
+<body style="font-family:'微软雅黑'">
+	<div class="wrap">
+		<header class="header">
+			<a class="back"><img src="../img/home_recommend_arrow_left.png"></a>
+			<h1>浏览历史</h1>
+			<p id="clear">清空</p>
+		</header>
+		<div class="main">
+			<dl>
+				<dt><img src="../img/zjr2.png" alt=""></dt>
+				<dd>
+					<h3>KENZO</h3>
+					<h3>高田闲三 浅粉色 卫衣</h3>
+					<h3>/s 160/84A</h3>
+				</dd>
+				<p>¥499</p>
+			</dl>
+			<dl>
+				<dt><img src="../img/zjr1.png" alt=""></dt>
+				<dd>
+					<h3>KENZO</h3>
+					<h3>高田闲三 浅粉色 卫衣</h3>
+					<h3>/s 160/84A</h3>
+				</dd>
+				<p>¥499</p>
+			</dl>
+		</div>
+		<div class="mark">
+			<div class="tan">
+				<h2>确定要清空</h2>
+				<p><span id="qu">取消</span><span id="open">确定</span></p>
+			</div>
+		</div>
+	</div>
+	
+	<script src="../js/setfontsize.js"></script>
+	<script src="../js/zepto.min.js"></script>
+	<script src="../js/swiper-3.3.1.min.js"></script>
+	<script src="../js/history.js"></script>
+</body>
+</html>

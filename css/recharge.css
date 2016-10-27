@@ -1,0 +1,184 @@
+@charset "UTF-8";
+@import url("reset.css");
+html, body, .container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #f2f2f2; }
+
+a {
+  color: #000; }
+
+body {
+  font-family: "微软雅黑";
+  font-size: .3rem; }
+
+.container {
+  display: -webkit-flex;
+  -webkit-flex-direction: column; }
+
+.header {
+  width: 100%;
+  height: .88rem;
+  background: #f9f9f9;
+  border-bottom: 1px solid #aeaeae;
+  position: relative; }
+  .header h1 {
+    font-size: .34rem;
+    text-align: center;
+    line-height: .88rem;
+    font-weight: bold; }
+  .header span {
+    width: .48rem;
+    height: .48rem;
+    background: url(../img/title_icon_back_black.png) no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: .25rem;
+    top: 50%;
+    margin-top: -.24rem;
+    font-size: 0; }
+
+.main {
+  width: 100%;
+  -webkit-flex: 1;
+  overflow: hidden;
+  position: relative; }
+  .main a {
+    width: 91%;
+    height: .9rem;
+    background: #bb2212;
+    color: #fff;
+    display: block;
+    font-size: .34rem;
+    border-radius: 2px;
+    margin: auto;
+    text-align: center;
+    line-height: .9rem; }
+  .main p {
+    padding-left: .38rem;
+    padding-top: 26px; }
+  .main div {
+    padding: .44rem 0;
+    background: #fff;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: -webkit-flex; }
+    .main div label {
+      width: 1.5rem;
+      text-align: right; }
+    .main div input {
+      -webkit-flex-grow: 1;
+      font-family: "微软雅黑";
+      border: none;
+      outline: none; }
+
+.mark {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none; }
+
+.mark1 {
+  width: 5.35rem;
+  height: 6.21rem;
+  background: #fff;
+  border-radius: 8px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -100%;
+  margin: auto; }
+  .mark1 dl {
+    line-height: 30px; }
+    .mark1 dl dt {
+      text-align: center; }
+    .mark1 dl dd {
+      text-align: center;
+      font-size: .5rem; }
+  .mark1 ul {
+    margin-top: 10px; }
+    .mark1 ul li {
+      padding: 10px 0;
+      margin: 0 .3rem;
+      border-top: 1px solid #e6e6e6;
+      border-bottom: 1px solid #e6e6e6;
+      display: -webkit-flex; }
+      .mark1 ul li:nth-of-type(1) {
+        background: url(../img/pay_icon_alipay.png) no-repeat 0.1rem center;
+        padding-left: .7rem;
+        background-size: .48rem .48rem; }
+      .mark1 ul li:nth-of-type(2) {
+        background: url(../img/pay_icon_weixin.png) no-repeat 0.1rem center;
+        padding-left: .7rem;
+        background-size: .48rem .48rem; }
+      .mark1 ul li span {
+        display: block;
+        width: 1.5rem; }
+      .mark1 ul li p {
+        -webkit-flex-grow: 1;
+        position: relative;
+        margin-left: 50%; }
+        .mark1 ul li p input, .mark1 ul li p label {
+          position: absolute;
+          left: 0;
+          top: 0; }
+        .mark1 ul li p input {
+          z-index: 999;
+          visibility: hidden; }
+          .mark1 ul li p input:checked + label {
+            background: url(../img/choice_selected_icon.png) no-repeat;
+            background-size: cover; }
+        .mark1 ul li p label {
+          width: .34rem;
+          height: .34rem;
+          background: url(../img/checkbox.png) no-repeat;
+          background-size: cover;
+          font-size: 0; }
+  .mark1 .btn {
+    margin-top: 40%; }
+    .mark1 .btn span {
+      width: 40%;
+      float: left;
+      margin-left: .4rem;
+      text-align: center;
+      line-height: .84rem;
+      border: 1px solid #e6e6e6;
+      background: #fafafa;
+      border-radius: 5px;
+      color: #bb2212; }
+      .mark1 .btn span.bg2 {
+        background: #bb2212;
+        color: #fff; }
+
+.mark2 {
+  width: 5.4rem;
+  height: 2.13rem;
+  background: #fff;
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -100%;
+  margin: auto; }
+  .mark2 h1 {
+    line-height: 1.18rem;
+    text-align: center;
+    border-bottom: 1px solid #dadade; }
+  .mark2 .btn span {
+    width: 50%;
+    float: left;
+    text-align: center;
+    line-height: .95rem;
+    border-right: 1px solid #dadade;
+    color: #007aff; }
+    .mark2 .btn span:nth-of-type(2) {
+      border-right: none; }
+    .mark2 .btn span.bg2 {
+      background: #bb2212;
+      color: #fff; }
+
+/*# sourceMappingURL=recharge.css.map */

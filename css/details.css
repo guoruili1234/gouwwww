@@ -1,0 +1,333 @@
+@import url(reset.css);
+a {
+  text-decoration: none;
+  color: #3e3e3e; }
+
+html, body, .wrap {
+  width: 100%;
+  height: 100%; }
+
+.wrap {
+  position: relative;
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  overflow: hidden;
+  background: #f4f4f4; }
+
+.header {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 999; }
+  .header a {
+    width: .66rem;
+    height: .66rem; }
+    .header a img {
+      width: 100%;
+      height: 100%; }
+    .header a:nth-of-type(1) {
+      position: absolute;
+      left: .22rem;
+      top: 0; }
+    .header a:nth-of-type(2) {
+      position: absolute;
+      right: .22rem;
+      top: 0; }
+
+.main {
+  width: 100%;
+  -webkit-flex: 1;
+  overflow-y: scroll; }
+  .main .swiper-container, .main .swiper-wrapper, .main .swiper-slide {
+    width: 100%; }
+  .main .swiper-slide {
+    width: 100%; }
+    .main .swiper-slide img {
+      width: 100%;
+      height: 100%; }
+  .main .swiper-pagination-bullet-active {
+    background: #bb2212; }
+  .main .ma {
+    width: 100%;
+    background: #fff;
+    margin-top: -.2rem; }
+    .main .ma h1 {
+      width: 100%;
+      line-height: .68rem;
+      font-size: .3rem;
+      padding-left: .46rem; }
+    .main .ma h2 {
+      width: 100%;
+      font-size: .2rem;
+      font-weight: normal;
+      color: #fff;
+      padding-left: .3rem; }
+      .main .ma h2 span {
+        background: #bb2212;
+        padding: .1rem;
+        line-height: .64rem; }
+        .main .ma h2 span:nth-of-type(1) {
+          border-radius: 0 .1rem .1rem 0; }
+        .main .ma h2 span:nth-of-type(2) {
+          border-radius: .1rem 0 0 .1rem; }
+    .main .ma h3 {
+      color: #bb2212;
+      font-size: .3rem;
+      padding-left: .3rem;
+      line-height: .74rem;
+      border-bottom: .01rem solid #f5f5f5; }
+      .main .ma h3 span {
+        color: #bdbdbd;
+        font-size: .18rem;
+        text-decoration: line-through;
+        padding-left: .1rem; }
+    .main .ma h4 {
+      width: 100%;
+      height: .8rem;
+      font-size: .2rem;
+      line-height: .8rem;
+      position: relative; }
+      .main .ma h4 span {
+        padding-left: .6rem;
+        color: #71cccc;
+        background: url(../img/price_check_icon_checked.png) no-repeat 0.2rem center;
+        background-size: .3rem .3rem; }
+      .main .ma h4 a {
+        position: absolute;
+        right: .3rem;
+        top: .1rem; }
+        .main .ma h4 a img {
+          width: 100%;
+          height: 100%; }
+  .main .ma1 {
+    width: 100%;
+    margin-top: .2rem;
+    background: #fff; }
+    .main .ma1 dl {
+      width: 100%;
+      display: -webkit-flex;
+      -webkit-flex-direction: row;
+      padding: .2rem;
+      border-bottom: .01rem solid #f5f5f5;
+      position: relative; }
+      .main .ma1 dl dt {
+        width: .72rem;
+        height: .72rem; }
+        .main .ma1 dl dt img {
+          width: 100%;
+          height: 100%; }
+      .main .ma1 dl dd {
+        line-height: .5rem;
+        font-size: .28rem;
+        margin-left: .2rem;
+        padding-top: .1rem; }
+        .main .ma1 dl dd h2 {
+          font-weight: bold; }
+        .main .ma1 dl dd h3 {
+          font-size: .2rem; }
+      .main .ma1 dl a {
+        position: absolute;
+        right: .27rem;
+        top: 0; }
+    .main .ma1 p {
+      font-size: .26rem;
+      padding: .4rem .5rem;
+      line-height: .5rem;
+      position: relative; }
+      .main .ma1 p span {
+        width: .26rem;
+        height: .26rem;
+        display: inline-block; }
+        .main .ma1 p span img {
+          width: 100%;
+          height: 100%; }
+        .main .ma1 p span:nth-of-type(1) {
+          position: absolute;
+          left: .2rem;
+          top: .1rem; }
+        .main .ma1 p span:nth-of-type(2) {
+          position: absolute;
+          right: .2rem;
+          bottom: .3rem; }
+  .main .ma2 {
+    width: 100%;
+    background: #fff;
+    margin-top: .2rem; }
+    .main .ma2 h3 {
+      width: 100%;
+      font-size: .28rem;
+      line-height: 1rem;
+      padding-left: .28rem;
+      position: relative;
+      color: #1a1a1a; }
+      .main .ma2 h3 span {
+        position: absolute;
+        right: .45rem;
+        top: 0;
+        color: #9c9c9c;
+        font-size: .2rem; }
+    .main .ma2 p {
+      width: 100%;
+      height: .5rem;
+      padding: 0 .28rem;
+      font-size: .24rem; }
+    .main .ma2 ul {
+      width: 100%;
+      font-size: .25rem; }
+      .main .ma2 ul li {
+        line-height: .7rem;
+        border-bottom: .01rem solid #f5f5f5;
+        padding-left: .28rem;
+        position: relative;
+        color: #939393; }
+        .main .ma2 ul li span {
+          position: absolute;
+          left: 3.3rem;
+          top: 0;
+          color: #1a1a1a; }
+  .main .ma3 {
+    width: 100%;
+    margin-top: .2rem;
+    background: #fff; }
+    .main .ma3 h2 {
+      width: 100%;
+      line-height: .85rem;
+      padding-left: .3rem;
+      font-size: .28rem; }
+    .main .ma3 h3 {
+      width: 100%;
+      padding-left: .3rem;
+      font-size: .18rem; }
+      .main .ma3 h3 span {
+        width: 1.25rem;
+        height: 1.25rem;
+        border: .01rem solid #f5f5f5;
+        display: inline-block;
+        margin-right: .2rem; }
+        .main .ma3 h3 span img {
+          width: 1.2rem;
+          height: .37rem;
+          margin-top: .45rem; }
+    .main .ma3 p {
+      line-height: .4rem;
+      padding: .3rem;
+      font-size: .24rem; }
+  .main .ma4 {
+    width: 100%;
+    margin-top: .2rem;
+    background: #fff; }
+    .main .ma4 p {
+      text-align: center;
+      font-size: .24rem;
+      line-height: .6rem; }
+    .main .ma4 img {
+      width: 100%;
+      height: 100%; }
+
+.footer {
+  width: 100%;
+  height: .96rem;
+  border-top: .01rem solid #ebebeb;
+  display: -webkit-flex;
+  -webkit-flex-direction: row; }
+  .footer a {
+    width: 1.6rem;
+    height: .96rem;
+    display: inline-block;
+    border-right: .01rem solid #ebebeb;
+    font-size: .2rem;
+    text-align: center;
+    padding-top: .1rem; }
+    .footer a img {
+      width: .4rem;
+      height: .4rem; }
+  .footer dl {
+    width: 3.1rem;
+    font-size: .2rem;
+    line-height: .4rem;
+    text-align: center;
+    padding-top: .1rem; }
+    .footer dl dd:nth-of-type(1) {
+      font-size: .3rem;
+      color: #bb2212;
+      font-weight: bold; }
+    .footer dl dd:nth-of-type(2) {
+      color: #6d6d6d; }
+      .footer dl dd:nth-of-type(2) span {
+        text-decoration: line-through; }
+  .footer button {
+    width: 3rem;
+    background: #bb2212;
+    color: #fff;
+    border: none;
+    font-size: .3rem; }
+
+.mark {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1; }
+  .mark .tan {
+    width: 5.5rem;
+    height: 2.8rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background: #f3f3f3;
+    margin: -1.4rem 0 0 -2.7rem;
+    border-radius: .2rem; }
+    .mark .tan h2 {
+      font-size: .3rem;
+      font-weight: bold;
+      text-align: center;
+      line-height: .8rem; }
+    .mark .tan h3 {
+      font-size: .25rem;
+      padding: 0 .3rem .4rem .3rem;
+      line-height: .4rem;
+      text-align: center;
+      border-bottom: 1px solid #c2c2ca; }
+    .mark .tan p {
+      width: 100%;
+      font-size: .3rem;
+      color: #007aff; }
+      .mark .tan p span {
+        width: 50%;
+        display: inline-block;
+        line-height: .8rem;
+        text-align: center; }
+        .mark .tan p span:nth-of-type(1) {
+          border-right: .01rem solid #c2c2ca; }
+  .mark .wei {
+    display: none;
+    width: 5.5rem;
+    height: 2rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background: #f3f3f3;
+    margin: -1rem 0 0 -2.7rem;
+    border-radius: .2rem; }
+    .mark .wei h2 {
+      font-size: .3rem;
+      font-weight: bold;
+      text-align: center;
+      line-height: 1.2rem;
+      border-bottom: .01rem solid #c2c2ca; }
+    .mark .wei p {
+      width: 100%;
+      font-size: .3rem;
+      color: #007aff; }
+      .mark .wei p span {
+        width: 50%;
+        display: inline-block;
+        line-height: .8rem;
+        text-align: center; }
+        .mark .wei p span:nth-of-type(1) {
+          border-right: .01rem solid #c2c2ca; }
+
+/*# sourceMappingURL=details.css.map */
